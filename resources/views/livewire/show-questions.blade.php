@@ -1,7 +1,7 @@
 <div>
     {{-- The Master doesn't talk, he acts. --}}
     <h1>Add Questions here</h1>
-    <form>
+    <form wire:submit.prevent="submit">
         <label for="title">Title</label><br>
         <input type="text" name="title"><br>
         <label for="category">Category:</label><br>
@@ -14,7 +14,7 @@
         <input type="text" name="option"><br>
         <label for="option">Option 4:</label><br>
         <input type="text" name="option"><br>
-        <button wire:submit.prevent="submit" method="POST">submit</button>
+        <button type="submit">submit</button>
         
 
     </form>
