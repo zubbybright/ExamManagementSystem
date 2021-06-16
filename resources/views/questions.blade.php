@@ -1,5 +1,3 @@
-<html>
-    <body>
-        <h1>{{$questions}} </h1>
-    </body>
-</html>
+<div>
+    <livewire:show-questions />
+</div>

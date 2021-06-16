@@ -8,14 +8,22 @@ use App\Models\Question;
 class ShowQuestions extends Component
 {   
 
-    public $questions;
+    public $technicalQuestions, $aptitudeQuestions , $logicalQuestions ;
 
     public function mount(){
 
-        $questions = Question::get();
-        return $questions;
+        $technicalQuestions = Question::where('category_id',1)->first();
 
-        $this->questions = $questions;
+        $aptitudeQuestions = Question::where('category_id',2)->first();
+        
+        $logicalQuestions = Question::where('category_id',3)->first();
+
+        $this->technicalQuestions = $technicalQuestions->title;
+        $this->aptitudeQuestions = $aptitudeQuestions->title;
+        $this->logicalQuestions = $logicalQuestions->title;
+        return [$this->technicalQuestions,$this->aptitudeQuestions, $this->logicalQuestions];
+
+       
         
     }
     

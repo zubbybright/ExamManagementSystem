@@ -35,7 +35,7 @@ class QuestionsSeeder extends Seeder
         DB::table('questions')->insert(
             [
                 'category_id' => 2,
-                'title' => 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi ',
+                'title' => 'Integer euismod feugiat cursus. Vivamus consequat nibh nulla, vitae ultricies risus dignissim a. Fusce non sodales turpis. Proin sed augue magna.',
                 'created_at'=> Carbon::now(),
                 'updated_at'=> Carbon::now()
             ]
@@ -44,7 +44,7 @@ class QuestionsSeeder extends Seeder
         DB::table('questions')->insert(
             [
                 'category_id' => 3,
-                'title' => 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi ',
+                'title' => 'Nulla velit risus, varius nec sem ac, finibus luctus leo. Suspendisse luctus pulvinar lectus, eget mollis nisl eleifend quis. Nunc faucibus lectus vel justo facilisis',
                 'created_at'=> Carbon::now(),
                 'updated_at'=> Carbon::now()
             ]

@@ -17,8 +17,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/questions', function () {
-    return view('livewire.show-questions');
-})->name('questions');
+    return view('questions');
+});
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
