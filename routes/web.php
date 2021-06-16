@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\QuestionsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,6 +17,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('questions');
 });
+
+Route::post('/submit', [QuestionsController::class, 'submit']);
+Route::post('/edit/{catId}', [QuestionsController::class, 'edit']);
+Route::post('/delete/{id}', [QuestionsController::class, 'delete']);
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
